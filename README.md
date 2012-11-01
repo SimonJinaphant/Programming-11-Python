@@ -4,11 +4,11 @@ This is a public repository for storing all of my files related to the Programmi
 The files within are mostly proof of concepts using python.
 
 ##Overview
-*assignments* - contains all in-class and "homework" files
+__assignments__ - contains all in-class and "homework" files
 
-*simple\_testing* - experimenting with random libraries in Python
+__simple\_testing__ - experimenting with random libraries in Python
 
-*over\_complicated* - taking what I have and transforming it :D
+__over\_complicated__ - taking what I have and transforming it :D
 
 ###What can I do with this?
 To clone this repository to your local machine
