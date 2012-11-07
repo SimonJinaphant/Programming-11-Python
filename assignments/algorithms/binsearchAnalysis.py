@@ -8,7 +8,7 @@ for i in range(1,101):
 	max = 100
 	count = 1
 	number = i
-	#number = random.randrange(min,max+1)
+
 	guess = (max+min)/2
 	
 	
