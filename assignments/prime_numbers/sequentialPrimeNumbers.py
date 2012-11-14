@@ -1,11 +1,11 @@
 '''
-	Maximum efficiency (that I can think of) in printing 
-	prime numbers IN SEQUENTIAL ORDER
-	
+	Maximum efficiency (that I can think of myself)
+	in printing prime numbers IN SEQUENTIAL ORDER
+
 	- Simon Jinaphant
 '''
 
-primeFactors = [1,2,3,5]
+primeFactors = [2,3,5]
 '''
 	Unfortunately to maximize efficiency I need to place in the starting 4 values
 	since they are exception my algorithm's rules
