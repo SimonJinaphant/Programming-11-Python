@@ -6,9 +6,10 @@ The files within are mostly proof of concepts using python.
 ##Overview
 __assignments__ - contains all in-class and "homework" files
 
-__simple\_testing__ - experimenting with random libraries in Python
+__concepts__ - proof of concepts in programming
 
-__over\_complicated__ - taking what I have and transforming it :D
+__over\_complicated__ - taking what I have and transforming it (mostly showing off):D
+
 
 ###What can I do with this?
 To clone this repository to your local machine
