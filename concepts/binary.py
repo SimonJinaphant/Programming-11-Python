@@ -85,3 +85,5 @@ def eightBitSubtraction(byteA,byteB, debug=False):
 		
 	print "The result is a negative number"
 	return invertBits(preResults[0])
+
+print eightBitAddition([0,1,1,0,1,0,0,1],[0,0,0,0,1,1,0,1])
