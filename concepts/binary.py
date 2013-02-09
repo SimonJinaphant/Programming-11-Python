@@ -8,8 +8,7 @@
 def halfAdder(aIn, bIn):
 	'''
 		Represents a half adder, given input A and B
-		
-		@return	return a tuple containing the sum of the two bits and the carried bit
+		returns a tuple containing the sum of the two bits and the carried bit
 	'''
 	return (aIn ^ bIn, aIn & bIn)
 	
@@ -19,8 +18,8 @@ def fullAdder(aIn,bIn,cIn):
 		Represents a full adder, given input A,B, and the carried in C,
 		This differs from a half adder which can only add two bits but not 3 bits,
 		the third bit being a carried in bit
-		 
-		@return	returns a tuple containing the sum of the two bits and the carried bit
+		
+		returns a tuple containing the sum of the two bits and the carried bit
 	'''
 	
 	sumAB = halfAdder(aIn,bIn)
@@ -40,8 +39,8 @@ def bitAdder(bitsA,bitsB,debug=False):
 		A generic adder that can be used for not only addition of bits,
 		but also part of subtraction
 		
-		@return	returns a tuple containing the added bits along with a possible carried bit
-				which can be used for determining overflow/underflow with bit subtraction
+		returns a tuple containing the added bits along with a possible carried bit
+		which can be used for determining overflow/underflow with bit subtraction
 	'''
 	if debug:
 		print "Input byte A:", bitsA
