@@ -17,4 +17,4 @@ def display_text(message, delay=2, type_delay=0.05):
 
 with open(argv[1]) as file:
 	for lines in file.readlines():
-			display_text(lines.strip())
+		display_text(lines.strip())
