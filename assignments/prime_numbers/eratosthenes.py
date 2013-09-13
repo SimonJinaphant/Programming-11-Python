@@ -16,9 +16,9 @@
 
 maxLimit = int(raw_input("Enter the limit for the prime numbers: "))
 
-primeNumbers = range(2,maxLimit+1)
+primeNumbers = range(2, maxLimit+1)
 
-for index in range(0,int(maxLimit**(0.5))):
+for index in xrange(0, int(maxLimit**(0.5))):
 	for number in primeNumbers[index+1:]:
 		if number % primeNumbers[index] == 0:
 			primeNumbers.remove(number)

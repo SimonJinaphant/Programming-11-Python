@@ -6,9 +6,9 @@ The files within are mostly proof of concepts using python.
 ##Overview
 __assignments__ - contains all in-class and "homework" files
 
-__concepts__ - proof of concepts in programming
+__concepts__ - Things that weren't taught in programming...
 
-__over\_complicated__ - taking what I have and transforming it (mostly showing off):D
+__random__ - showing off random things:D
 
 
 ###What can I do with this?

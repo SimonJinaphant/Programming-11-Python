@@ -9,7 +9,7 @@ def factorialByRecursion(index):
 def factorialByLoop(index):
 	total = 1
 	
-	for i in range(2,factorialIndex+1):
+	for i in xrange(2, factorialIndex+1):
 		total *= i
 	
 	return total

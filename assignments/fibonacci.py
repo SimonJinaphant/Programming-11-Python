@@ -1,9 +1,9 @@
 from math import sqrt
 
 '''
-Method 1 - Recursion
-Recursion is not the best way to solve this if the index number is very high...
-However it's the most simplest way to explain the solution
+	Method 1 - Recursion
+	Recursion is not the best way to solve this if the index number is very high...
+	However it's the most simplest way to explain the solution
 '''
 
 def fibonacciByRecursion(index):
@@ -15,9 +15,9 @@ def fibonacciByRecursion(index):
 	return fibonacciByRecursion(index-1) + fibonacciByRecursion(index-2)
 	
 '''
-Method 2 - Math
-This method is my preferred way of calculating fibonacci numbers since 
-we won't be creating a large stacking method call every time the index is large
+	Method 2 - Math
+	This method is the preferred way of calculating fibonacci numbers since 
+	we won't be creating a large stacking method call every time the index is large
 '''
 
 def fibonacciByMath(index):

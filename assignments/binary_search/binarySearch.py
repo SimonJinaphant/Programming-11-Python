@@ -5,8 +5,8 @@ min = 1
 max = 100
 count = 1
 
-number = random.randrange(min,max+1)
-guess = (max+min)/2
+number = random.randrange(min, max+1)
+guess = (max + min)/2
 
 print "\nThe magic number is: ", number
 print "let's see how the binary search figures it out"
@@ -15,8 +15,8 @@ print "let's see how the binary search figures it out"
 	A binary search isn't truly infinite 
 	(so using "while true" may not be the best idea...)
 	
-	From my analysis it seems to correspond to the most significant 
-	bit of the number being the maximum number of times we have to check for it
+	The maximum attempt we have to search for something is equal
+	to the log2(n) where n is the size of the collection
 '''
 while True:
 	print "\nMininum: ", min, "\tMaximum: ", max
