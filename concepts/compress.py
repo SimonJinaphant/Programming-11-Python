@@ -7,9 +7,14 @@ def compress(uncompressed):
 	
 	for i in xrange(1, len(uncompressed)):
 		if type(uncompressed[i]) != current_type:
-			if current_type == type("str"):
+			if current_type == type("string"):
+				print "String"
 				groups.append("".join(uncompressed[start:i]))
+			elif current_type == type(1):
+				print "Int"
+				groups.append(sum(uncompressed[start:i]))
 			else:
+				print "Nope"
 				groups.extend(uncompressed[start:i])
 				
 			start = i
