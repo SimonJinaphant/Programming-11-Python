@@ -53,19 +53,13 @@ class PriorityQueue:
         return root
 
     def readjust(self, element):
-        for i, item in enumerate(self.heap[1:], 1):
-            if item == element:
-                self._increase(i)
+        self._increase(self.heap.index(element,1))
 
     def get(self, element):
-        i = 1
-        while i <= self.size:
-            if self.heap[i] == element:
-                return self.heap[i]
-            i+=1
+        return self.heap[self.heap.index(element,1)]
 
     def contains(self, element):
-        for i in self.heap[1:]:
-            if i == element:
+        for e in self.heap[1:]:
+            if e == element:
                 return True
         return False
