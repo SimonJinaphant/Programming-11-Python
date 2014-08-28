@@ -1,5 +1,6 @@
 import heapq
 from sys import argv
+from time import sleep
 
 '''
 	FASTER than AStar2.py but less accurate at larger path...
@@ -80,7 +81,7 @@ while open_set:
 	closed_set.add(current)
 
 	if current == end:
-		print "Done"
+		#print "Done"
 		path.append(current)
 		while current.parent != None:
 			current = current.parent
@@ -88,7 +89,7 @@ while open_set:
 
 		break
 
-	world[current.y][current.x] = "*"
+	#world[current.y][current.x] = "+"
 
 	for x in xrange(-1, 2):
 		for y in xrange(-1, 2):
@@ -102,11 +103,11 @@ while open_set:
 					if world[current.y][current.x+x] == "X" or world[current.y+y][current.x] == "X":
 						continue
 
-				world[neighbour.y][neighbour.x] = "+"
+				#world[neighbour.y][neighbour.x] = "#"
 				cost = current.g_score + move_cost(current, neighbour)
 
 				if neighbour in open_set and cost < neighbour.g_score:
-					heapq.heappop(open_heap)
+					heapq.heappop(open_heap)	#??????? POP???
 					open_set.remove(neighbour)
 
 				if neighbour not in open_set and neighbour not in closed_set:
@@ -115,6 +116,7 @@ while open_set:
 					heapq.heappush(open_heap, (neighbour.g_score + h_cost(neighbour), neighbour))
 					neighbour.parent = current
 	#display_world()
+	#sleep(0.05)
 		#print neighbour.x, neighbour.y, neighbour.g_score, h_cost(neighbour)
 	#raw_input(":")
 
@@ -125,5 +127,6 @@ while open_set:
 for step in path[::-1]:
 	world[step.y][step.x] = '.'
 display_world()
+#sleep(0.05)
 
 
